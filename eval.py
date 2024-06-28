@@ -15,6 +15,7 @@ import sys
 parser = argparse.ArgumentParser(description='evaluate snapshot experiments')
 parser.add_argument('--dataset_split', help='which test to evaluate on', default='test')
 parser.add_argument('--config', help='Path to config file', default='configs/cfg_all.yaml')
+parser.add_argument('--weighting', help='Option if upsampling/reweighting is being done', default=False)
 args = parser.parse_args()
 cfg = yaml.safe_load(open(args.config, 'r'))
 print(f'Using config "{cfg}"')
@@ -34,7 +35,7 @@ def evaluate(cfg):
         dl_test=create_dataloader(cfg,split="val",mapping=dl_train.dataset.mapping)
         test_mapping=train_mapping
     # DIST VERSION
-    if weighting:
+    if args.weighting:
         weighting=dl_test.dataset.labels['question__species'].value_counts(normalize=True)
         for species in dl_train.dataset.labels['question__species'].unique():
             if species not in weighting.index:
