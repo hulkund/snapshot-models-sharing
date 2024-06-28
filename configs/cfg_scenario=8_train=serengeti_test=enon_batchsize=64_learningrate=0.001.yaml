@@ -1,0 +1,15 @@
+batch_size: 64
+data_root: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data
+device: cuda
+exp_name: scenario=8_train=serengeti_test=enon_batchsize=64_learningrate=0.001
+image_size:
+- 224
+- 224
+learning_rate: 0.001
+num_epochs: 50
+num_workers: 4
+seed: 123456789
+test_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/exps_folder/scenario=8_train=serengeti_test=enon//test.csv
+train_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/exps_folder/scenario=8_train=serengeti_test=enon//train.csv
+val_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/exps_folder/scenario=8_train=serengeti_test=enon//test.csv
+weight_decay: 0.01
