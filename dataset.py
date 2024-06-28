@@ -45,7 +45,7 @@ class CTDataset(Dataset):
             dataframes = []
             print(label_file_list)
             for label_file in label_file_list:
-                df = pd.read_csv(os.path.join(self.data_root, label_file))
+                df = pd.read_csv(label_file)
                 dataframes.append(df)
             self.labels = pd.concat(dataframes, ignore_index=True)
 

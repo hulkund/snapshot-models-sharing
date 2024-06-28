@@ -9,7 +9,7 @@ learning_rate: 0.001
 num_epochs: 50
 num_workers: 4
 seed: 123456789
-test_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/exps_folder/scenario=8_train=karoo_test=kga//test.csv
-train_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/exps_folder/scenario=8_train=karoo_test=kga//train.csv
-val_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/exps_folder/scenario=8_train=karoo_test=kga//test.csv
+test_dataset: exps_folder/scenario=8_train=karoo_test=kga//test.csv
+train_dataset: exps_folder/scenario=8_train=karoo_test=kga//train.csv
+val_dataset: exps_folder/scenario=8_train=karoo_test=kga//test.csv
 weight_decay: 0.01

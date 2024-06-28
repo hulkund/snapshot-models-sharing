@@ -19,8 +19,8 @@ weight_decay: 0.01     # hyperparameter for regularization
 
 # dataset
 exp_name: snapshot_kga_kga_batchsize=16_learningrate=0.001
-test_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/metadata_preprocessed/Snapshot_Kgalagadi_test.csv
-train_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/metadata_preprocessed/Snapshot_Kgalagadi_train.csv
-val_dataset: /home/gridsan/nhulkund/beerylab_data_shared/LILA_data/metadata_preprocessed/Snapshot_Kgalagadi_test.csv
+test_dataset: /metadata_preprocessed/Snapshot_Kgalagadi_test.csv
+train_dataset: /metadata_preprocessed/Snapshot_Kgalagadi_train.csv
+val_dataset: /metadata_preprocessed/Snapshot_Kgalagadi_test.csv
 
 
